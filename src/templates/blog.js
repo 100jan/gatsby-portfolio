@@ -9,7 +9,6 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      subtitle
       featuredImage {
         file {
           url
@@ -42,9 +41,6 @@ const blog = props => {
           <h3 className="m-post-title">
             {props.data.contentfulBlogPost.title}
           </h3>
-          <h4 className="m-post-subtitle">
-            {props.data.contentfulBlogPost.subtitle}
-          </h4>
         </div>
         <div className="l-img">
           <img

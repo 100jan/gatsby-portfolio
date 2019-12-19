@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="l-contact">
       <p>
-        <FaEnvelope /> mpredovic@gmail.com
+        <FaEnvelope /> stojanpredovic1@gmail.com
       </p>
     </div>
   )

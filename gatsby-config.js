@@ -14,9 +14,9 @@ console.log("[contentfulConfig]", contentfulConfig)
 
 module.exports = {
   siteMetadata: {
-    title: "markoni.codes",
-    description: "Portfolio website",
-    author: "Marko Predovic",
+    title: "glas metohije",
+    description: "Humanitarna organizacija",
+    author: "Markoni",
   },
   plugins: [
     {
