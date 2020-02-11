@@ -58,7 +58,7 @@ const blog = props => {
         </div>
         <div className="l-back">
           <Link to="/blog">
-            <FaArrowAltCircleLeft /> врати се на блог
+            <FaArrowAltCircleLeft /> врати се на блогback to blog
           </Link>
         </div>
       </div>
