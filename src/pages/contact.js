@@ -8,7 +8,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="l-main-content l-contact">
-      <PageTitle title="Contact me" />
+      <PageTitle title="Kонтакт" />
       <ContactForm />
     </div>
   </Layout>

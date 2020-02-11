@@ -3,11 +3,23 @@
 ----------------------------------- */
 .l-portfolio {
   .l-nav-portfolio {
-    padding: 20px 10px;
+    padding: 30px 10px 20px;
 
     ul {
       list-style: none;
       margin: 0;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .l-portfolio-intro {
+    margin-bottom: $s-margin;
+
+    p.lead {
+      padding: 20px 30px;
     }
   }
 
@@ -16,6 +28,7 @@
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
 
     img {
       margin-bottom: 0;
@@ -76,6 +89,69 @@
     &.active {
       color: #fff;
       background-color: $red-darkest;
+    }
+  }
+}
+[class*="portfolio-project"] {
+  .l-img {
+    padding: 10px;
+    box-shadow: 0 0 2px $gray;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .l-portfolio .l-nav-portfolio {
+    padding: 20px 15px;
+  }
+  .l-portfolio .l-portfolio-project .l-content h3 {
+    padding: 0 15px 10px;
+  }
+  .l-portfolio .l-portfolio-project .l-content h4 {
+    right: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .l-portfolio .l-nav-portfolio {
+    padding: 20px 30px;
+    max-width: $max-container-width;
+    margin: 0 auto;
+  }
+  .l-portfolio .l-portfolio-intro {
+    margin-bottom: $m-margin;
+    p.lead {
+      max-width: $max-container-width;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+  }
+  .l-portfolio .l-portfolio-project {
+    padding: 0 30px;
+    max-width: $max-container-width;
+    margin: 0 auto $l-margin;
+    flex-wrap: nowrap;
+    .l-img {
+      order: 1;
+      width: 48%;
+      margin-right: 4%;
+    }
+    .l-content {
+      order: 2;
+      width: 48%;
+
+      h3 {
+        padding: 0;
+        margin-bottom: 10px;
+      }
+      h4 {
+        position: static;
+        display: inline-block;
+      }
+      .l-description-project {
+        display: block;
+        font-size: 1.7rem;
+        line-height: 1.5;
+      }
     }
   }
 }

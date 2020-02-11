@@ -42,12 +42,14 @@ const blog = props => {
             {props.data.contentfulBlogPost.title}
           </h3>
         </div>
-        <div className="l-img">
-          <img
-            src={props.data.contentfulBlogPost.featuredImage.file.url}
-            alt={props.data.contentfulBlogPost.title}
-          />
-        </div>
+        {props.data.contentfulBlogPost.featuredImage && (
+          <div className="l-img">
+            <img
+              src={props.data.contentfulBlogPost.featuredImage.file.url}
+              alt={props.data.contentfulBlogPost.title}
+            />
+          </div>
+        )}
         <div className="l-content">
           {documentToReactComponents(
             props.data.contentfulBlogPost.body.json,
@@ -56,7 +58,7 @@ const blog = props => {
         </div>
         <div className="l-back">
           <Link to="/blog">
-            <FaArrowAltCircleLeft /> back to blog
+            <FaArrowAltCircleLeft /> врати се на блог
           </Link>
         </div>
       </div>

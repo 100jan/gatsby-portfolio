@@ -14,8 +14,8 @@ console.log("[contentfulConfig]", contentfulConfig)
 
 module.exports = {
   siteMetadata: {
-    title: "glas metohije",
-    description: "Humanitarna organizacija",
+    title: "глас метохије",
+    description: "Хуманитарна организација",
     author: "Markoni",
   },
   plugins: [

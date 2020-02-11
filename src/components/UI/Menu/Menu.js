@@ -8,17 +8,22 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" activeClassName="is-active-link">
-              Home
+              Почетна
             </Link>
           </li>
           <li>
             <Link to="/blog" activeClassName="is-active-link">
-              Blog
+              Блог
             </Link>
           </li>
           <li>
             <Link to="/contact" activeClassName="is-active-link">
-              Contact
+              Kонтакт
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" activeClassName="is-active-link">
+              О нама
             </Link>
           </li>
         </ul>
