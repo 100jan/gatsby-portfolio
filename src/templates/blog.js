@@ -29,7 +29,11 @@ const blog = props => {
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
 
-        return <img alt={alt} src={url} />
+        return (
+          <div className="hello">
+            <img alt={alt} src={url} />
+          </div>
+        )
       },
     },
   }
@@ -58,7 +62,7 @@ const blog = props => {
         </div>
         <div className="l-back">
           <Link to="/blog">
-            <FaArrowAltCircleLeft /> врати се на блогback to blog
+            <FaArrowAltCircleLeft /> врати се на блог
           </Link>
         </div>
       </div>

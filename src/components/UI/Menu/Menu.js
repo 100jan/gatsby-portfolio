@@ -22,8 +22,8 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" activeClassName="is-active-link">
-              О нама
+            <Link to="/donacija" activeClassName="is-active-link">
+              Донација
             </Link>
           </li>
         </ul>

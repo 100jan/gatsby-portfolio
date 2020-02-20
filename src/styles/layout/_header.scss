@@ -42,7 +42,7 @@ header {
         font-size: 2.8rem;
 
         a {
-          color: $red-darkest;
+          color: $green-dark;
         }
       }
     }
@@ -97,7 +97,7 @@ header {
             text-decoration: none;
 
             &.is-active-link {
-              color: $red-dark;
+              color: $red;
             }
           }
         }

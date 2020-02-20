@@ -60,7 +60,7 @@
         bottom: 10px;
         right: 10px;
         padding: 2px 5px;
-        background-color: $red-dark;
+        background-color: $green-dark;
         color: #fff;
         font-size: 1.3rem;
         border-radius: 4px;
@@ -88,7 +88,7 @@
 
     &.active {
       color: #fff;
-      background-color: $red-darkest;
+      background-color: $green-dark;
     }
   }
 }

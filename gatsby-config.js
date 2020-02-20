@@ -10,8 +10,6 @@ contentfulConfig = {
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 }
 
-console.log("[contentfulConfig]", contentfulConfig)
-
 module.exports = {
   siteMetadata: {
     title: "глас метохије",
@@ -66,5 +64,6 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    "@contentful/gatsby-transformer-contentful-richtext",
   ],
 }

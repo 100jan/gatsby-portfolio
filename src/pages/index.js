@@ -3,21 +3,23 @@ import { Link } from "gatsby"
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
-import Banner from "../components/Banner"
+import About from "../components/About"
+import PageTitle from "../components/PageTitle"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    Pocetna strana
-    {/* banner: */}
-    {/* <Banner layoutCssClass="l-home-banner" /> */}
+    <div className="l-main-content l-about">
+      <PageTitle title="Добродошли" />
+      <About />
+    </div>
   </Layout>
 )
 
 export default IndexPage
 
 // TODO:
-// 1. Portfolio page
-// 2. Services page
-// 3. Contact form
+// 1. home page
+// 2. Donacije cms page
+// 3. Contact form enable
 // 4.
