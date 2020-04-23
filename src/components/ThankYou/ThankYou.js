@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 const ThankYou = () => {
   return (
     <div className="l-thank-you">
-      <p>Your message has been received.</p>
-      <p>I'll get back to you ASAP.</p>
+      <p>Ваша порука је примљена.</p>
+      <p>Добићете одговор у сто краћем року.</p>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const SuccessPage = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="l-main-content l-thank-you-page">
-      <PageTitle title="Thank You" />
+      <PageTitle title="Хвала вам" />
       <ThankYou />
     </div>
   </Layout>
