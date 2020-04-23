@@ -18,10 +18,10 @@ const ContactForm = () => {
     let errors = {}
 
     if (name === "") {
-      errors.name = "Name is required"
+      errors.name = "Obavezno polje"
     }
     if (message === "") {
-      errors.message = "Message is empty"
+      errors.message = "Poruka je prazna"
     }
 
     setErrors(errors)
@@ -56,7 +56,7 @@ const ContactForm = () => {
   return (
     <div className="l-contact-form">
       <div className={styles.contact_form}>
-        <p className={styles.intro}>Send me email</p>
+        <p className={styles.intro}>Pošalji email</p>
         <form
           name="Contact Form"
           method="post"
@@ -68,7 +68,7 @@ const ContactForm = () => {
           <div className={styles.l_left}>
             <div className={styles.l_field}>
               <label htmlFor="contact-name">
-                Name <span style={{ color: "#c3073f" }}>*</span>
+                Ime <span style={{ color: "#c3073f" }}>*</span>
               </label>
               <input
                 type="text"
@@ -93,7 +93,7 @@ const ContactForm = () => {
           <div className={styles.l_right}>
             <div className={styles.l_field}>
               <label htmlFor="contact-message">
-                Message <span style={{ color: "#c3073f" }}>*</span>
+                Poruka <span style={{ color: "#c3073f" }}>*</span>
               </label>
               <textarea
                 name="contact-message"
@@ -107,7 +107,7 @@ const ContactForm = () => {
           </div>
 
           <div className={styles.l_action}>
-            <input type="submit" value="Send" />
+            <input type="submit" value="Pošalji" />
           </div>
         </form>
       </div>
